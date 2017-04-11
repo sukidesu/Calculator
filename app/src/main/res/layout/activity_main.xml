@@ -30,6 +30,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:text="C"
+            android:background="@drawable/white_selector"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
         <Button
@@ -37,6 +38,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/white_selector"
             android:text="DEL"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -45,6 +47,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/white_selector"
             android:text="÷"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -52,6 +55,7 @@
             android:id="@+id/btn_multiply"
             android:layout_width="80dp"
             android:layout_height="70dp"
+            android:background="@drawable/white_selector"
             android:layout_marginLeft="10dp"
             android:text="×"
             android:textSize="30sp"
@@ -68,6 +72,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:text="7"
+            android:background="@drawable/white_selector"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
         <Button
@@ -76,12 +81,14 @@
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
             android:text="8"
+            android:background="@drawable/white_selector"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
         <Button
             android:id="@+id/btn_9"
             android:layout_width="80dp"
             android:layout_height="70dp"
+            android:background="@drawable/white_selector"
             android:layout_marginLeft="10dp"
             android:text="9"
             android:textSize="30sp"
@@ -91,6 +98,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/white_selector"
             android:text="-"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -105,6 +113,7 @@
             android:id="@+id/btn_4"
             android:layout_width="80dp"
             android:layout_height="70dp"
+            android:background="@drawable/white_selector"
             android:text="4"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -114,6 +123,7 @@
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
             android:text="5"
+            android:background="@drawable/white_selector"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
         <Button
@@ -121,6 +131,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/white_selector"
             android:text="6"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -129,6 +140,7 @@
             android:layout_width="80dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/white_selector"
             android:text="+"
             android:textSize="30sp"
             android:gravity="right|bottom"/>
@@ -152,6 +164,7 @@
                     android:id="@+id/btn_1"
                     android:layout_width="80dp"
                     android:layout_height="70dp"
+                    android:background="@drawable/white_selector"
                     android:text="1"
                     android:textSize="30sp"
                     android:gravity="right|bottom"/>
@@ -161,6 +174,7 @@
                     android:layout_height="70dp"
                     android:layout_marginLeft="10dp"
                     android:text="2"
+                    android:background="@drawable/white_selector"
                     android:textSize="30sp"
                     android:gravity="right|bottom"/>
                 <Button
@@ -168,6 +182,7 @@
                     android:layout_width="80dp"
                     android:layout_height="70dp"
                     android:layout_marginLeft="10dp"
+                    android:background="@drawable/white_selector"
                     android:text="3"
                     android:textSize="30sp"
                     android:gravity="right|bottom"/>
@@ -182,6 +197,7 @@
                     android:id="@+id/btn_0"
                     android:layout_width="80dp"
                     android:layout_height="70dp"
+                    android:background="@drawable/white_selector"
                     android:text="0"
                     android:textSize="30sp"
                     android:gravity="right|bottom"/>
@@ -191,16 +207,18 @@
                     android:layout_height="70dp"
                     android:layout_marginLeft="10dp"
                     android:text="."
+                    android:background="@drawable/white_selector"
                     android:textSize="30sp"
                     android:gravity="right|bottom"/>
                 </LinearLayout>
 
         </LinearLayout>
         <Button
-            android:id="@+id/equ"
+            android:id="@+id/btn_equ"
             android:layout_width="80dp"
             android:layout_height="144dp"
             android:layout_marginLeft="10dp"
+            android:background="@drawable/orange_selector"
             android:text="="
             android:textSize="30sp"
             android:gravity="right|bottom"/>
