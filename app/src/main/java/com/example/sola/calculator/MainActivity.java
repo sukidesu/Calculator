@@ -95,16 +95,61 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_minus:
             case R.id.btn_multiply:
             case R.id.btn_divide:
-            case R.id.btn_equ:
             case R.id.btn_plus:
                 et_input.setText(str+" "+((Button)v).getText()+" ");
-            case R.id.btn_clear:
-            case R.id.btn_del:
-                //到这   慕课21-5 5分钟
-
-            default:
                 break;
+            case R.id.btn_clear:
+                et_input.setText("");
+                break;
+            case R.id.btn_del:
+                if(str!=null&&str.equals("")){
+                    et_input.setText(str.substring(0,str.length()-1));
+                }
+                break;
+            case R.id.btn_equ:
 
+        }
+
+    }
+    private void getResult(){
+        String exp = et_input.getText().toString();
+        if(exp==null||exp.equals("")){
+            return;
+        }
+        if(!exp.contains(" ")){
+            return;
+        }
+        double result=0;
+        String s1 = exp.substring(0,exp.indexOf(" "));
+        String op = exp.substring(exp.indexOf(" ")+1,exp.indexOf(" ")+2);
+        String s2 = exp.substring(exp.indexOf(" ")+3);
+        if(!s1.equals(" ")&&!s2.equals(" ")){
+            double d1 = Double.parseDouble(s1);
+            double d2 = Double.parseDouble(s2);
+            if(op.equals("+")){
+                result=d1+d2;
+
+            }else if(op.equals("-")){
+                result=d1-d2;
+
+            }else if (op.equals("×")){
+                result=d1*d2;
+
+            }else if (op.equals("÷")){
+                if(d2==0){
+                    result=0;
+                }else{
+                    result=d1/d2;
+
+                }
+
+            }
+            if(!s1.contains(".")&&!s2.contains(".")){
+                int r= (int)result;
+                et_input.setText(r+"");
+            }else{
+                et_input.setText(result+"");
+            }
         }
 
     }
